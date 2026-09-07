@@ -1,0 +1,25 @@
+[2026-09-07T17:08:02Z] === ENRICH ITERATION 1 START | repo=Frommi/miniz_oxide sha=86d92e8d ===
+[2026-09-07T17:08:02Z] [iter=1] PHASE START: enrich repo=Frommi/miniz_oxide sha=86d92e8d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/86d92e8d-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/86d92e8d284b0acd451e7b6db6bdef41ae9c9db4.nq.gz
+[2026-09-07T17:08:04Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-07T17:08:11Z] [iter=1] AST store loaded triples=830167 load_secs=6 mem_mb=789 MB
+[2026-09-07T17:08:11Z] [iter=1] Step 2: Finding LSP targets mem_mb=789 MB
+[2026-09-07T17:08:12Z] [iter=1] LSP targets found call_sites=4765 imports=0 extends=0 implements=6 secs=1
+[2026-09-07T17:08:12Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=789 MB
+[2026-09-07T17:08:16Z] [iter=1] Position index built positions=60575 nodes_with_types=70425 secs=4 mem_mb=789 MB
+[2026-09-07T17:08:16Z] [iter=1] Step 3: Starting LSP resolution mem_mb=789 MB already_completed_types=[] already_completed_files=0
+[2026-09-07T17:08:16Z] [iter=1] Resolving target type target_type=call_site count=4765
+[2026-09-07T17:13:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=1 resolved=31 errors=904 current=miniz/miniz.c
+[2026-09-07T17:21:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.2 files_done=2 resolved=85 errors=2140 current=tests/miniz_tester.cpp
+[2026-09-07T17:22:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.4 files_done=3 resolved=312 errors=2345 current=examples/example6.c
+[2026-09-07T17:22:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=12 resolved=429 errors=2429 current=examples/example4.c
+[2026-09-07T17:23:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.7 files_done=15 resolved=551 errors=2492 current=src/tdef.rs
+[2026-09-07T17:24:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.8 files_done=17 resolved=758 errors=2678 current=miniz_oxide/src/inflate/core.rs
+[2026-09-07T17:25:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.6 files_done=18 resolved=869 errors=2799 current=miniz_oxide_test/tests/test_serde.rs
+[2026-09-07T17:26:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.1 files_done=23 resolved=1032 errors=2884 current=src/lib_oxide.rs
+[2026-09-07T17:26:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.7 files_done=32 resolved=1239 errors=2976 current=miniz_oxide/src/deflate/zlib.rs
+[2026-09-07T17:26:51Z] [iter=1] Target type resolved target_type=call_site resolved=1269 errors=2997 secs=1116 mem_mb=789 MB
+[2026-09-07T17:26:51Z] [iter=1] Resolving target type target_type=implements_clause count=6
+[2026-09-07T17:27:00Z] [iter=1] Target type resolved target_type=implements_clause resolved=6 errors=0 secs=9 mem_mb=789 MB
+[2026-09-07T17:27:10Z] [iter=1] Step 5: Writing final enrichment file triples=29619
+[2026-09-07T17:27:10Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/86d92e8d284b0acd451e7b6db6bdef41ae9c9db4.nq.gz size_kb=528
+[2026-09-07T17:27:10Z] [iter=1] PHASE END: enrich elapsed_s=1148 elapsed_min=19.1 total_triples=29619
